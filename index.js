@@ -12,7 +12,7 @@ router.get('/ping', async (req, res) => {
   res.send('pong');
 });
 
-router.get('/health', function(req, res, next) {
+router.get('/health', function(req, res) {
   res.json({
     status: 'Healthy'
   });
